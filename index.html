@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <title>Cat Game</title>
+</head>
+<body>
+    <h1>Cicás játék</h1>
+    <div class="start">
+        <form id="form">
+            <label for="#name2">Első játékos neve:</label>
+            <input type="text" id="name1" placeholder="Tas">
+            <label for="#name2">Második játékos neve:</label>
+            <input type="text" id="name2" placeholder="Lee">
+            <label for="#points">Győzelemhez szükséges pontok:</label>
+            <input type="number" id="points" min="1" max="15" value="5">
+            <label for="#sizeboard">Játéktér nagysága:</label>
+            <input type="number" id="sizeboard" min="6" max="15" value="6">
+            <label for="#numcats">Cicák száma:</label>
+            <input type="number" id="numcats" min="8" max="20" value="8">
+            <input type="button" id="btn" value="Kezdés">
+        </form>
+        <p id="previous"></p> 
+    </div>
+    <div class="game">
+        <p id="player1" hidden></p>
+        <table id="bench1" hidden>
+            <tbody class="body_bench1">
+            </tbody>
+        </table>
+        <p id="curturn" hidden></p>
+        <table id="board" hidden>
+            <tbody></tbody>
+        </table>
+        <p id="player2" hidden></p>
+        <table id="bench2" hidden>
+            <tbody class="body_bench2">
+            </tbody>
+        </table>
+        <p id="winner" hidden></p>
+        <input type="button" id="bntnewgame" value="Új játék" hidden>
+    </div>
+</body>
+<script type="module" src="main.js"></script>
+</html>

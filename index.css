@@ -1,0 +1,85 @@
+
+@media screen { 
+    table {
+        border: #000000 solid 2px;
+        margin: 1em;
+        padding: 1em;
+        width: fit-content;
+        background-color: pink;
+    }
+
+    p {
+        width: fit-content;
+        margin: 1em;
+        background-color: pink;
+        border: #000000 solid 2px;
+        padding: 0.25em;
+    }
+
+    h1 {
+        margin: 0.5em;
+        color: pink;
+        text-shadow: -1px 1px 0 #000,
+        1px 1px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000;
+    }
+
+    td {
+        align-items: center;
+        border: #000000 solid 2px;
+        height: 50px;
+        width: 50px;
+        background-color: white;
+    }
+
+    img {
+        height: 50px;
+        width: auto;
+    }
+
+    form {
+        width: fit-content;
+        display: grid;
+        border: #000000 solid 2px;
+        border-radius: 10px;
+        font-size:larger;
+        padding: 1em;
+        margin: 1em;
+        background-color: pink;
+    }
+
+    p#previous {
+        width: fit-content;
+        border: #000000 solid 2px;
+        border-radius: 10px;
+        font-size:larger;
+        padding: 1em;
+        margin: 1em;
+    }
+
+    html {
+        display: table;
+        margin: auto;
+        background-image: url("cats1.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    
+    body {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    input#btn {
+        width: 5em;
+    }
+
+    input {
+        margin: 0.25em;
+    }
+
+    input#bntnewgame {
+        margin: 1em;
+    }
+}
