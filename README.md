@@ -1,32 +1,24 @@
-# Ellenőrző lista
+# Exploding Cats
+Exploding Cats is an engaging two-player game where players take turns placing cats on a grid. The objective is to strategically position the cats to push the opponent's cats off the board or align three of your cats to score points. The game offers various features to enhance the gameplay experience:
 
-A listában tegyél `[X]` jelet minden olyan feladat elé, amelyet legalább részben megoldottál!
+## Feature List
 
-## Kötelezően teljesítendő (enélkül nem fogadjuk el, 8 pont)
+### Required Features
+1. **Game Board Initialization**: The game starts with an empty board and each player has 8 cats.
+2. **Turn-based Gameplay**: Players take turns placing their cats onto the board from their bench.
+3. **Valid Placements**: New cats can only be placed on empty cells on the board.
+4. **Cat Pushing Mechanism**: When a new cat is placed, neighboring cats are pushed accordingly. Cats pushed off the board return to the respective player's bench.
+5. **Alignment Detection**: When three cats are aligned in any direction, they are returned to the player's bench and points are scored.
+6. **Game End Condition**: The game ends when a player reaches 5 points.
 
-[X] Egyéb: a "Beadott munka tisztasága" részben szereplő `README.md` állomány hiánytalanul kitöltve szerepel a feltöltött csomagban (0 pont)
-[X] Játéktér: az üres pálya és játékosonként 8 cica megjelenik (1 pont)
-[X] Játéktér: a két játékos felváltva helyez el egy-egy cicát a pályán a saját kispadjáról (1 pont)
-[X] Játéktér: új cicát csak a pálya üres cellára lehet elhelyezni (1 pont)
-[X] Játéktér: új cica elhelyezése után a szomszédos cicák ellökődése helyesen megtörténik — ide értve, hogy a pályán kívülre lökődő cicák visszatérnek a megfelelő játékos kispadjára (2 pont)
-[X] Játéktér: a játék észleli, ha bármely irányban három cica egymás mellé kerül — ide értve, hogy megtörténik a három cica visszahelyezése a kispadra és a pontok számolása is (2 pont)
-[X] Játéktér: a játék véget ér, ha valamelyik játékos elér 5 pontot (1 pont)
-
-## Az alap feladatok (12 pont)
-
-[X] Játéktér: a játék véget ér, ha valamelyik játékosnak minden cicája egyidejűleg a pályán van (1 pont)
-[X] Játéktér: a cicák elhelyezése előtt a játék jelzi (pl. cella háttérszínével), hogy mely cicák fognak ellökődni (1 pont)
-[X] Játéktér: a cicák elhelyezése kattintás mellett a kispadon található cicák húzásával (drag and drop) is elvégezhető (2 pont)
-[ ] Játéktér: a cicák ellökődése animációval történik (1 pont)
-[X] Kezdőképernyő: a játék indítása előtt megadható a két játékos neve és a győzelemhez szükséges pontszám (1 pont)
-[X] Kezdőképernyő: beállítható a játéktér nagysága (pl. 7x7) és a játékosonkénti cicák száma (1 pont)
-[X] Kezdőképernyő: megjelennek a legutóbbi játékok eredményei — kik játszottak, mikor és milyen végeredménnyel (1 pont)
-[X] Kezdőképernyő: a legutóbbi játékok eredményei megmaradnak az oldal bezárása után is (1 pont)
-[X] Játéktér: a játék végén egyetlen gombnyomással új játék indítható ugyanezekkel a beállításokkal az oldal újratöltése nélkül (1 pont)
-[X] Nyávogás: a tevékenységekhez (pl. játék indítása, cica elhelyezése, lökdösődés, pontszerzés) hangeffektusok is tartoznak (1 pont)
-[X] Egyéb: igényes kinézet és kódszervezés (1 pont)
-
-## Plusz feladatok (plusz 5 pont)
-
-[ ] Mentés: játék közben egy gombra kattintva tartósan elmenthető az aktuális állapot, amely a kezdőképernyőről betölthető és folytatható (2 pont)
-[ ] Időmérés: a játékosokhoz tartozik egy-egy időmérő, fejenként 2 perc gondolkodási idővel, ami az adott játékos lépésére várva visszaszámol (sakkóraszerű mechanizmus) — amelyik játékosnak elfogy a gondolkodási ideje, automatikusan veszít (3 pont)
+### Basic Features
+1. **Alternative End Condition**: The game also ends if a player has all their cats on the board simultaneously.
+2. **Placement Indicators**: Before placing a new cat, the game indicates which cats will be pushed, using visual cues like cell background colors.
+3. **Drag-and-Drop Functionality**: Cats can be placed by clicking or dragging and dropping from the bench.
+4. **Customizable Start Screen**: Before the game starts, players can enter their names and set the points needed to win.
+5. **Adjustable Game Settings**: Players can set the board size (e.g., 7x7) and the number of cats per player.
+6. **Recent Game Results**: The start screen displays recent game results, including who played, when, and the final score.
+7. **Persistent Game Results**: Recent game results persist even after the page is closed.
+8. **Quick Restart**: At the end of a game, a new game with the same settings can be started with a single button press without reloading the page.
+9. **Sound Effects**: The game includes sound effects for activities like game start, cat placement, pushing, and scoring.
+10. **High-Quality Design**: The game features an appealing user interface.
